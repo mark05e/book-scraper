@@ -11,11 +11,11 @@ async function scrapeAll(browserInstance){
 		scrapedData['HistoricalFiction'] = await pageScraper.scraper(browser, 'Historical Fiction');
 		scrapedData['Mystery'] = await pageScraper.scraper(browser, 'Mystery');
 		await browser.close();
-		fs.writeFile("data.json", JSON.stringify(scrapedData), 'utf8', function(err) {
+		fs.writeFile("./export/data.json", JSON.stringify(scrapedData), 'utf8', function(err) {
 		    if(err) {
 		        return console.log(err);
 		    }
-		    console.log("The data has been scraped and saved successfully! View it at './data.json'");
+		    console.log("The data has been scraped and saved successfully! View it at './export/data.json'");
 		});
 	}
 	catch(err){
