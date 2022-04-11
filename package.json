@@ -1,0 +1,29 @@
+{
+    "name": "book-scraper",
+    "version": "1.0.0",
+    "description": "Code mostly copied from tutorial at https://www.digitalocean.com/community/tutorials/how-to-scrape-a-website-using-node-js-and-puppeteer",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "node index.js"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/mark05e/book-scraper.git"
+    },
+    "keywords": [
+      "Puppeteer",
+      "scraper",
+      "demo"
+    ],
+    "author": "Gbadebo Bello, Mark",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/mark05e/book-scraper/issues"
+    },
+    "homepage": "https://github.com/mark05e/book-scraper#readme",
+    "dependencies": {
+      "puppeteer": "^13.5.2"
+    }
+  }
+  
