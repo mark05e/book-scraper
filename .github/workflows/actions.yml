@@ -25,15 +25,15 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
 
-    - name: Install dependencies
-      uses: tj-actions/puppeteer@v3.2
-      with:
-        args: yarn install
+    # - name: Install dependencies
+    #   uses: tj-actions/puppeteer@v3.2
+    #   with:
+    #     args: yarn install
 
-    - name: Run Actions!
-      uses: tj-actions/puppeteer@v3.2
-      with:
-        args: npm run start
+    # - name: Run Actions!
+    #   uses: tj-actions/puppeteer@v3.2
+    #   with:
+    #     args: npm run start
       
-    # - run: npm run start
+    - run: npm run start
 #    - run: npm test
