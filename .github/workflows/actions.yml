@@ -17,3 +17,8 @@ jobs:
 
     - run: npm install
     - run: npm run start
+
+    - uses: actions/upload-artifact@v3
+      with:
+        name: my-artifact
+        path: ./export/data.json
