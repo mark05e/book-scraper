@@ -5,6 +5,7 @@ on:
 
 jobs:
   build:
+    environment: env1
 
     runs-on: ubuntu-latest
 
